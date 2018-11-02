@@ -1,0 +1,57 @@
+{
+	"name": "pipeline18",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 20
+				}
+			}
+		],
+		"parameters": {
+			"p1": {
+				"type": "String",
+				"defaultValue": "a"
+			},
+			"p2": {
+				"type": "String",
+				"defaultValue": "b"
+			},
+			"p3": {
+				"type": "String",
+				"defaultValue": "c"
+			},
+			"p4": {
+				"type": "String",
+				"defaultValue": "d"
+			},
+			"p5": {
+				"type": "String",
+				"defaultValue": "e"
+			},
+			"p6": {
+				"type": "String",
+				"defaultValue": "f"
+			},
+			"p7": {
+				"type": "String",
+				"defaultValue": "g"
+			},
+			"p8": {
+				"type": "String",
+				"defaultValue": "h"
+			},
+			"p9": {
+				"type": "String",
+				"defaultValue": "i"
+			},
+			"p10": {
+				"type": "String",
+				"defaultValue": "j"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
