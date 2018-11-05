@@ -1,0 +1,13 @@
+{
+	"name": "AzureSqlTable5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase5",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "[dbo].[Directories]"
+		}
+	}
+}
