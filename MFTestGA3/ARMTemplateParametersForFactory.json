@@ -4,6 +4,39 @@
 	"parameters": {
 		"factoryName": {
 			"value": "MFTestGA3"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase10_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase11_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase4_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase5_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase6_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase7_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase8_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase9_connectionString": {
+			"value": ""
 		}
 	}
 }

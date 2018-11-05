@@ -6,6 +6,50 @@
 			"type": "string",
 			"metadata": "Data Factory Name",
 			"defaultValue": "MFTestGA3"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"AzureSqlDatabase10_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase10'"
+		},
+		"AzureSqlDatabase11_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase11'"
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase2'"
+		},
+		"AzureSqlDatabase3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase3'"
+		},
+		"AzureSqlDatabase4_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase4'"
+		},
+		"AzureSqlDatabase5_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase5'"
+		},
+		"AzureSqlDatabase6_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase6'"
+		},
+		"AzureSqlDatabase7_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase7'"
+		},
+		"AzureSqlDatabase8_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase8'"
+		},
+		"AzureSqlDatabase9_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase9'"
 		}
 	},
 	"variables": {
@@ -536,201 +580,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/pipeline17')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Wait1",
-						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 20
-						}
-					}
-				],
-				"parameters": {
-					"p1": {
-						"type": "String",
-						"defaultValue": "a"
-					},
-					"p2": {
-						"type": "String",
-						"defaultValue": "b"
-					},
-					"p3": {
-						"type": "String",
-						"defaultValue": "c"
-					},
-					"p4": {
-						"type": "String",
-						"defaultValue": "d"
-					},
-					"p5": {
-						"type": "String",
-						"defaultValue": "e"
-					},
-					"p6": {
-						"type": "String",
-						"defaultValue": "f"
-					},
-					"p7": {
-						"type": "String",
-						"defaultValue": "g"
-					},
-					"p8": {
-						"type": "String",
-						"defaultValue": "h"
-					},
-					"p9": {
-						"type": "String",
-						"defaultValue": "i"
-					},
-					"p10": {
-						"type": "String",
-						"defaultValue": "j"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline18')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Wait1",
-						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 20
-						}
-					}
-				],
-				"parameters": {
-					"p1": {
-						"type": "String",
-						"defaultValue": "a"
-					},
-					"p2": {
-						"type": "String",
-						"defaultValue": "b"
-					},
-					"p3": {
-						"type": "String",
-						"defaultValue": "c"
-					},
-					"p4": {
-						"type": "String",
-						"defaultValue": "d"
-					},
-					"p5": {
-						"type": "String",
-						"defaultValue": "e"
-					},
-					"p6": {
-						"type": "String",
-						"defaultValue": "f"
-					},
-					"p7": {
-						"type": "String",
-						"defaultValue": "g"
-					},
-					"p8": {
-						"type": "String",
-						"defaultValue": "h"
-					},
-					"p9": {
-						"type": "String",
-						"defaultValue": "i"
-					},
-					"p10": {
-						"type": "String",
-						"defaultValue": "j"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline19')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/pipeline2')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
@@ -795,494 +644,6 @@
 					"param10": {
 						"type": "String",
 						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline20')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline21')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline22')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline23')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline24')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline25')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Web1",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": "http://foo.com",
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"parameters": {
-					"param1": {
-						"type": "String",
-						"defaultValue": "aa"
-					},
-					"param2": {
-						"type": "String",
-						"defaultValue": "bb"
-					},
-					"param3": {
-						"type": "String",
-						"defaultValue": "cc"
-					},
-					"param4": {
-						"type": "String",
-						"defaultValue": "dd"
-					},
-					"param5": {
-						"type": "String",
-						"defaultValue": "ee"
-					},
-					"param6": {
-						"type": "String",
-						"defaultValue": "ff"
-					},
-					"param7": {
-						"type": "String",
-						"defaultValue": "gg"
-					},
-					"param8": {
-						"type": "String",
-						"defaultValue": "hh"
-					},
-					"param9": {
-						"type": "String",
-						"defaultValue": "ii"
-					},
-					"param10": {
-						"type": "String",
-						"defaultValue": "jj"
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pipeline26')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Wait1",
-						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 20
-						}
-					}
-				],
-				"parameters": {
-					"p1": {
-						"type": "String",
-						"defaultValue": "a"
-					},
-					"p2": {
-						"type": "String",
-						"defaultValue": "b"
-					},
-					"p3": {
-						"type": "String",
-						"defaultValue": "c"
-					},
-					"p4": {
-						"type": "String",
-						"defaultValue": "d"
-					},
-					"p5": {
-						"type": "String",
-						"defaultValue": "e"
-					},
-					"p6": {
-						"type": "String",
-						"defaultValue": "f"
-					},
-					"p7": {
-						"type": "String",
-						"defaultValue": "g"
-					},
-					"p8": {
-						"type": "String",
-						"defaultValue": "h"
-					},
-					"p9": {
-						"type": "String",
-						"defaultValue": "i"
-					},
-					"p10": {
-						"type": "String",
-						"defaultValue": "j"
 					}
 				},
 				"annotations": []
@@ -1738,6 +1099,242 @@
 					}
 				},
 				"annotations": []
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"typeProperties": {
+					"tableName": "[concat('[', 'dbo].[Glossaries]')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable2')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase2",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"typeProperties": {
+					"tableName": "[concat('[', 'dbo].[CookieInfo]')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase2')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable3')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase3",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"typeProperties": {
+					"tableName": "[concat('[', 'dbo].[Glossaries]')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase3')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable4')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase4",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"typeProperties": {}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase4')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable5')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase5",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"typeProperties": {
+					"tableName": "[concat('[', 'dbo].[Directories]')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase5')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase1_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase10')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase10_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase11')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase11_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase2')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase2_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase3')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase3_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase4')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase4_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase5')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase5_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase6')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase6_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase7')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase7_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase8')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase8_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase9')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase9_connectionString')]"
+				}
 			},
 			"dependsOn": []
 		}
